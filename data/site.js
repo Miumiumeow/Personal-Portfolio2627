@@ -1,9 +1,13 @@
 // Content of portfolio.
 // Everything on the page is read from here.
 
+const dev = (name) =>
+  `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${name}/${name}-original.svg`;
+
 export const site = {
   name: "Iya Marie Malinao",
   photo: "/me.jpg",
+  resume: "/resume.pdf",
   floatingIcons: [
     "/floating/f01.png",
     "/floating/f3.png",
@@ -13,26 +17,47 @@ export const site = {
     "/floating/f6.png",
   ],
   role: "Web Developer | UI/UX Designer",
+  roles: ["Web Developer", "UI/UX Designer"],
   email: "iyamariemalinao@gmail.com",
   url: "https://your-domain.vercel.app",
   description:
     "Portfolio of Your Name, a web developer who builds fast, accessible websites and apps.",
 
   intro:
-    "Welcome! I'm Iya – a web developer and UI/UX designer passionate about building functional, visually appealing, and user-centered digital experiences.",
+    "I love bringing ideas to life through web development and UI/UX design. With my background in Information Technology, I combine creativity and technical skills to build engaging, accessible, and user-friendly digital experiences.",
 
-  about: [
-    "Hi, I'm Your Name, a web developer based in Quezon City. I care about clean interfaces, readable code, and shipping work that holds up over time.",
-    "Replace this paragraph with a short story about how you got into development, what you're working on now, and what you're looking for next.",
+  outside: {
+    title: "Outside of coding",
+    text: "Creativity has always been a big part of who I am. From drawing and cosplay to exploring different crafts, I love bringing ideas to life through art and design. I'm also an avid gamer, which has shaped my appreciation for visual details, interactive experiences, and thoughtful design. These interests inspire the way I approach web development, blending creativity with functionality.",
+    likes: [
+      "Digital Art & Drawing",
+      "Cosplay & DIY Crafts",
+      "Gaming & Interactive Worlds",
+      "Creative Design",
+      "Exploring New Ideas"
+    ],
+  },
+
+  photos: [
+    { src: "/about/photo-1.jpg", alt: "Describe photo 1" },
+    { src: "/about/photo-2.jpg", alt: "Describe photo 2" },
+    { src: "/about/photo-3.jpg", alt: "Describe photo 3" },
+    { src: "/about/photo-4.jpg", alt: "Describe photo 4" },
   ],
 
   skills: [
-    "JavaScript",
-    "React",
-    "Next.js",
-    "Tailwind CSS",
-    "Node.js",
-    "Git & GitHub",
+    { name: "Figma", icon: dev("figma") },
+    { name: "Canva", icon: "/tech/canva.png" },
+    { name: "Moqups", icon: "/tech/moqups.png" },
+    { name: "HTML5", icon: dev("html5") },
+    { name: "CSS3", icon: dev("css3") },
+    { name: "JavaScript (ES6+)", icon: dev("javascript") },
+    { name: "React.js", icon: dev("react") },
+    { name: "Next.js", icon: dev("nextjs") },
+    { name: "Tailwind CSS", icon: dev("tailwindcss") },
+    { name: "Bootstrap", icon: dev("bootstrap") },
+    { name: "Git & GitHub", icon: dev("github") },
+    { name: "Microsoft Office Suite" },
   ],
 
   experience: [
@@ -97,8 +122,52 @@ export const site = {
     },
   ],
 
-  links: [
-    { label: "GitHub", href: "https://github.com/your-username" },
-    { label: "LinkedIn", href: "https://linkedin.com/in/your-username" },
+  certifications: [
+    {
+      title: "Certified in Cybersecurity",
+      issuer: "ISC2",
+      date: "Oct 2024",
+      image: "/certs/cert2.png",
+      certificate: "/certs/cert2.png",
+    },
+    {
+      title: "Salesforce Developer",
+      issuer: "Salesforce",
+      date: "Jan 2025",
+      image: "/certs/cert3.png",
+      certificate: "/certs/cert3.png",
+    },
+    {
+      title: "ITS Network Security",
+      issuer: "Certiport - A Pearson VUE Business",
+      date: "Mar 2025",
+      image: "/certs/cert1.png",
+      certificate: "/certs/cert1.png",
+    },
   ],
+
+  contact: {
+    messages: [
+      "hi! thanks for stopping by ♥",
+      "want to work together, or just say hello?",
+      "pick a way to reach me:",
+    ],
+    replies: [
+      {
+        label: "✉ email me",
+        response: "here's my email ♥",
+        reveal: "iyamariemalinao@gmail.com",
+      },
+      {
+        label: "in LinkedIn",
+        href: "https://www.linkedin.com/in/iyamarie-malinao/",
+        response: "let's connect! ★",
+      },
+      {
+        label: "</> GitHub",
+        href: "https://github.com/Miumiumeow",
+        response: "come peek at my code ♥",
+      },
+    ],
+  },
 };

@@ -2,6 +2,7 @@
 
 /* Color tokens. Change these to restyle the whole site. */
 :root {
+  color-scheme: light;
   --background: #fff1f5;
   --foreground: #3b1624;
   --muted: #7a5463;
@@ -9,14 +10,13 @@
   --accent: #be185d;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #2d101e;
-    --foreground: #fde8ef;
-    --muted: #d4a5b8;
-    --border: #4a2236;
-    --accent: #f9a8d4;
-  }
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --background: #2d101e;
+  --foreground: #fde8ef;
+  --muted: #d4a5b8;
+  --border: #4a2236;
+  --accent: #f9a8d4;
 }
 
 @theme inline {
@@ -64,6 +64,56 @@
       transform: translate(var(--dx, 10px), -24px) rotate(calc(var(--r, 0deg) + 10deg));
     }
   }
+
+  --animate-bob: bob 3s ease-in-out infinite;
+
+  @keyframes bob {
+
+    0%,
+    100% {
+      transform: translateY(0) rotate(var(--tilt, 0deg));
+    }
+
+    50% {
+      transform: translateY(-7px) rotate(calc(var(--tilt, 0deg) * -1));
+    }
+  }
+
+  --animate-wiggle: wiggle 0.45s ease-in-out infinite;
+
+  @keyframes wiggle {
+
+    0%,
+    100% {
+      transform: rotate(-5deg) scale(1.12);
+    }
+
+    50% {
+      transform: rotate(5deg) scale(1.12);
+    }
+  }
+
+  --animate-pop: pop 0.9s ease-out forwards;
+
+  @keyframes pop {
+    0% {
+      transform: translateY(0) scale(0.5);
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateY(-70px) scale(1.4);
+      opacity: 0;
+    }
+  }
+
+  --animate-marquee: marquee 35s linear infinite;
+
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
 }
 
 html {
@@ -90,4 +140,8 @@ body {
   html {
     scroll-behavior: auto;
   }
+}
+
+html[data-booted] [data-boot] {
+  display: none;
 }

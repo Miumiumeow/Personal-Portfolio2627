@@ -5,12 +5,13 @@ const nav = [
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
+  { label: "Certs", href: "#certifications" },
   { label: "Contact", href: "#contact" },
 ];
 
 export default function Header() {
   return (
-    <header className="sticky top-3 z-10 px-4 pt-3">
+    <header className="sticky top-3 z-40 px-4 pt-3">
       <div className="mx-auto flex max-w-3xl items-center justify-between border-2 border-foreground bg-background px-4 py-1.5 shadow-[4px_4px_0_0_var(--accent)]">
         <a href="#" aria-label={`${site.name}, back to top`}>
           <Image
