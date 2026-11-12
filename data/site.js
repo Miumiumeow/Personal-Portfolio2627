@@ -66,59 +66,65 @@ export const site = {
       company: "Xavier School Nuvali",
       period: "2026 - 2027",
       points: [
-        "Built and shipped responsive pages using React and Tailwind CSS.",
-        "Worked with designers to turn Figma mockups into working features.",
-        "Fixed accessibility and performance issues across the main site.",
+        "Facilitate computer subject instruction for Grades 6 and 7, covering digital literacy, programming, and computer applications.",
+        "Teach Media and Information Literacy (MIL) to Grade 12 students, focusing on digital media, information evaluation, and responsible technology use.",
+        "Develop instructional materials, learning activities, and assessments to support student learning and understanding.",
+        "Design user interfaces and user experiences for research projects, creating layouts and prototypes based on project requirements."
       ],
-      tags: ["React", "Tailwind CSS", "Figma"],
+      tags: ["Computer Education", "Media and Information Literacy", "UI/UX Design", "Figma", "Instructional Design"],
     },
     {
       role: "Data Administration Intern",
       company: "National Reinsurance Corporation of the Philippines",
       period: "2025 - 2026",
       points: [
-        "Built and shipped responsive pages using React and Tailwind CSS.",
-        "Worked with designers to turn Figma mockups into working features.",
-        "Fixed accessibility and performance issues across the main site.",
+        "Performed data cleaning, validation, and duplicate checking on Excel datasets to ensure data accuracy and integrity.",
+        "Conducted data reconciliation and identified discrepancies in records for review and re-extraction.",
+        "Generated ICT reports by extracting and consolidating financial and operational data into standardized templates.",
+        "Created data reference guides and processed structured data entries following established guidelines."
       ],
-      tags: ["React", "Tailwind CSS", "Figma"],
+      tags: ["Microsoft Excel", "Data Management", "Data Validation", "Reporting"],
     },
     {
-      role: "UI/UX Design Lead Designer",
+      role: "UI/UX Designer & Frontend Developer",
       company: "Academic and Personal Projects",
       period: "2023 - 2025",
       points: [
-        "Designed wireframes and prototypes for a mobile app.",
-        "Ran short user tests and turned the feedback into design updates.",
+        "Designed user interfaces and layouts for various academic web-based applications and systems.",
+        "Created wireframes and prototypes to visualize application structures and user flows.",
+        "Translated design concepts into functional and responsive web interfaces using frontend technologies.",
+        "Developed and refined application interfaces with a focus on usability, consistency, and user experience."
       ],
-      tags: ["Figma", "User research"],
+      tags: ["Figma", "React.js", "HTML5", "CSS3", "Tailwind CSS"],
     },
   ],
 
   projects: [
     {
-      title: "Project One",
-      description:
-        "A short description of what this project does and the problem it solves.",
+      title: "Tara4A: Interactive Web Application for Smart Tourism and Local Establishment Discovery",
+      description: "A short description of what this project does.",
+      image: "/projects/project-one.png",
+      link: "https://example.com",
       tags: ["Next.js", "Tailwind CSS"],
-      live: "https://example.com",
-      repo: "https://github.com/your-username/project-one",
     },
     {
-      title: "Project Two",
-      description:
-        "Another project. Mention what you built, what you used, and what you learned.",
-      tags: ["React", "Node.js"],
-      live: "https://example.com",
-      repo: "https://github.com/your-username/project-two",
+      title: "Lark Seimitsu Document Library",
+      description: "A short description of what this project does.",
+      image: "/projects/project-one.png",
+      link: "https://example.com",
+      tags: ["Next.js", "Tailwind CSS"],
     },
     {
-      title: "Project Three",
-      description:
-        "A third project. Swap these out for your best work, or delete any you don't need.",
-      tags: ["JavaScript", "API"],
-      live: "",
-      repo: "https://github.com/your-username/project-three",
+      title: "StartUp",
+      description: "Another project. Say what you built and what you used.",
+      image: "/projects/project-two.png",
+      link: "https://example.com",
+      tags: ["Figma", "UI/UX"],
+    },
+    {
+      title: "NU Laguna Facility Management System",
+      image: "/projects/project-three.png",
+      link: "https://example.com",
     },
   ],
 
